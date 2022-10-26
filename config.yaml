@@ -18,10 +18,10 @@ monitors:
   - id: bariskeser-com # unique identifier
     name: bariskeser.com
     description: 'Kendi Sitem' # default=empty
-    url: 'https://bariskeser.com/status/' # URL to fetch
+    url: 'https://bariskeser.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: royalnetwork-xyz
