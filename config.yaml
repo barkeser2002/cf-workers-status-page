@@ -1,8 +1,8 @@
 settings:
-  title: 'Status Page'
+  title: 'Sunucu Durumu'
   url: 'https://status.bariskeser.com' # used for Slack messages
   logo: logos.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 60 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'Tüm Sistemler Operasyonel'
@@ -18,7 +18,7 @@ monitors:
   - id: bariskeser-com # unique identifier
     name: bariskeser.com
     description: 'Kendi Sitem' # default=empty
-    url: 'https://bariskeser.com' # URL to fetch
+    url: 'https://bariskeser.com/status/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
