@@ -70,7 +70,7 @@ export async function notifyTelegram(monitor, operational) {
   )}* changed status to *${getOperationalLabel(operational)}*
   ${operational ? '✅' : '❌'} \`${monitor.method ? monitor.method : 'GET'} ${
     monitor.url
-  }\` \\- 👀 [Status Page](${config.settings.url})`
+  }\` \\- 👀 [Durum Sayfası](${config.settings.url})`
 
   const payload = new FormData()
   payload.append('chat_id', SECRET_TELEGRAM_CHAT_ID)
@@ -96,7 +96,7 @@ export async function notifyDiscord(monitor, operational) {
         }`,
         description: `\`${monitor.method ? monitor.method : 'GET'} ${
           monitor.url
-        }\` - :eyes: [Status Page](${config.settings.url})`,
+        }\` - :eyes: [Durum Sayfası](${config.settings.url})`,
         color: operational ? 3581519 : 13632027,
       },
     ],
