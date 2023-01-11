@@ -24,10 +24,18 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: royalnetwork-xyz
-    name: royalnetwork.xyz
+  - id: cumicbot-tk
+    name: cumicbot.tk
     description: 'Bot Websitesi'
-    url: 'https://royalnetwork.xyz'
+    url: 'https:///cumicbot.tk'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: eronalist-com
+    name: eronalist.com
+    description: 'Eren Arkadaşımızın sitesi'
+    url: 'https:///eronalist.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
