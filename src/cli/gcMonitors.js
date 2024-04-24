@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 const fs = require('fs')
 
 const accountId = process.env.CF_ACCOUNT_ID
-const namespaceId = process.env.KV_NAMESPACE_ID
+const namespaceId = "372049296f6f43b0a9b27e53ee6c1f56"
 const apiToken = process.env.CF_API_TOKEN
 
 const kvMonitorsKey = 'monitors_data_v1_1'
