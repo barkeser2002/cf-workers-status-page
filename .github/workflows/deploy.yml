@@ -22,7 +22,7 @@ jobs:
       env:
         NODE_ENV: production
     - name: Publish
-      uses: Cyb3r-Jak3/wrangler-action@v1.0.0
+      uses: RhinoCodes/wrangler2-action@1.4.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         preCommands: |
