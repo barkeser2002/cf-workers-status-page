@@ -11,9 +11,9 @@ crons = ["*/5 * * * *"]
 
 [build]
 command = "npm run build"
-#account_id = ""
-#type = "webpack"
-#webpack_config = "node_modules/flareact/webpack"
+account_id = "278af70e005da2b9dad665f4340a2797"
+type = "webpack"
+webpack_config = "node_modules/flareact/webpack"
 
 
 [site]
