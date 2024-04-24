@@ -1,4 +1,4 @@
-name = "status"
+name = "status2"
 workers_dev = true
 account_id = "278af70e005da2b9dad665f4340a2797"
 type = "webpack"
@@ -8,6 +8,6 @@ compatibility_date = "2021-07-23"
 [triggers]
 crons = ["*/5 * * * *"]
 
-[site]
+[workers-site]
 bucket = "out"
 main = "workers-site/index.js"
