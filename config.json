@@ -1,0 +1,29 @@
+{
+  "settings": {
+    "title": "Sunucu/Site Durum Bilgisi",
+    "url": "https://status.bariskeser.com",
+    "logo": "logos.png",
+    "daysInHistogram": 60,
+    "collectResponseTimes": true,
+    "allmonitorsOperational": "Tüm Siteler Olması Gerektiği Gibi Çalışıyor",
+    "notAllmonitorsOperational": "Tüm Siteler Yanıt Vermiyor",
+    "monitorLabelOperational": "Tekrar Aktif Oldu",
+    "monitorLabelNotOperational": "Zaman Aşımına Uğradı",
+    "monitorLabelNoData": "Veri yok",
+    "dayInHistogramNoData": "Veri yok",
+    "dayInHistogramOperational": "Düzgün olarak Çalışıyorlar",
+    "dayInHistogramNotOperational": " proglem(ler)"
+  },
+  "monitors": [
+    {
+      "id": "bariskeser-com",
+      "name": "bariskeser.com",
+      "description": "Kendi Sitem",
+      "url": "https://bariskeser.com/",
+      "method": "GET",
+      "expectStatus": 200,
+      "followRedirect": true,
+      "linkable": true
+    }
+  ]
+}
