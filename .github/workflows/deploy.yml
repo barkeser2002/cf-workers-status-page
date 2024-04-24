@@ -17,8 +17,8 @@ jobs:
     - uses: actions/setup-node@v4.0.2
       with:
         node-version: 16
-    - run: yarn install
-    - run: yarn build
+    - run: yarn install --legacy-peer-deps
+    - run: yarn build --legacy-peer-deps
       env:
         NODE_ENV: production
     - name: Publish
