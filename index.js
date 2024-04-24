@@ -1,6 +1,17 @@
 import { handleEvent } from 'flareact'
 import { processCronTrigger } from './src/functions/cronTrigger'
 
+module.exports = {
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      type: 'json',
+      use: 'yaml-loader',
+    })
+
+    return config
+  },
+}
 /**
  * The DEBUG flag will do two things that help during development:
  * 1. we will skip caching on the edge, which makes it easier to
