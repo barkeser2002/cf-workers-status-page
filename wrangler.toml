@@ -15,7 +15,7 @@ bucket = "out"
 #########################################################
 # uncomment and adjust following if you are not using GitHub Actions
 [env.production]
-kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "07e9b8a83a1a422d85cb99e77ab9f3f9" }]
+kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "372049296f6f43b0a9b27e53ee6c1f56" }]
 #zone_id="xxx"
 #route="xxx"
  #         export KV_NAMESPACE_ID=$(npx @cloudflare/wrangler kv:namespace list 2> >(tee stderr.log >&2) | head -1 | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
