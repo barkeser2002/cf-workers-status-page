@@ -8,6 +8,12 @@ compatibility_date = "2021-07-23"
 [triggers]
 crons = ["*/5 * * * *"]
 
-[workers-site]
+[site]
 bucket = "out"
 main = "workers-site/index.js"
+#########################################################
+# uncomment and adjust following if you are not using GitHub Actions
+[env.production]
+kv-namespaces = { binding = "KV_STATUS_PAGE", id = "07e9b8a83a1a422d85cb99e77ab9f3f9" }
+#zone_id="xxx"
+#route="xxx"
