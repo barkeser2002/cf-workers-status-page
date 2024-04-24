@@ -10,10 +10,4 @@ crons = ["*/5 * * * *"]
 
 [site]
 bucket = "out"
-main = "index.js"
-#########################################################
-# uncomment and adjust following if you are not using GitHub Actions
-#[env.production]
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
-#zone_id="xxx"
-#route="xxx"
+main = "workers-site/index.js"
