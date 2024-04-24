@@ -1,4 +1,4 @@
-name = "status2"
+name = "status"
 workers_dev = true
 account_id = "278af70e005da2b9dad665f4340a2797"
 type = "webpack"
@@ -13,7 +13,7 @@ bucket = "out"
 main = "workers-site/index.js"
 #########################################################
 # uncomment and adjust following if you are not using GitHub Actions
-[env.production]
-kv-namespaces = { binding = "KV_STATUS_PAGE", id = "07e9b8a83a1a422d85cb99e77ab9f3f9" }
+#[env.production]
+#kv-namespaces = { binding = "KV_STATUS_PAGE", id = "07e9b8a83a1a422d85cb99e77ab9f3f9" }
 #zone_id="xxx"
 #route="xxx"
