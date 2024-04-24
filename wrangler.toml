@@ -4,18 +4,18 @@ account_id = "278af70e005da2b9dad665f4340a2797"
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
+main = "index.js"
 
 [triggers]
 crons = ["*/5 * * * *"]
 
 [site]
 bucket = "out"
-entry-point = "./index.js"
-main = "workers-site/index.js"
+entry-point = "./"
 #########################################################
 # uncomment and adjust following if you are not using GitHub Actions
 [env.production]
-kv-namespaces = { binding = "KV_STATUS_PAGE", id = "07e9b8a83a1a422d85cb99e77ab9f3f9" }
+kv_namespaces = { binding = "KV_STATUS_PAGE", id = "07e9b8a83a1a422d85cb99e77ab9f3f9" }
 #zone_id="xxx"
 #route="xxx"
  #         export KV_NAMESPACE_ID=$(npx @cloudflare/wrangler kv:namespace list 2> >(tee stderr.log >&2) | head -1 | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
