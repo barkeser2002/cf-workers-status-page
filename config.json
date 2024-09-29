@@ -24,6 +24,16 @@
       "expectStatus": 200,
       "followRedirect": true,
       "linkable": true
+    },
+    {
+      "id": "tiky-server",
+      "name": "Tiky Server",
+      "description": "Tiky'nin Çalıştığı Sunucu",
+      "url": "http://89.35.52.160/",
+      "method": "GET",
+      "expectStatus": 200,
+      "followRedirect": true,
+      "linkable": false
     }
   ]
 }
